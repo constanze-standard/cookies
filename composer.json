@@ -1,8 +1,8 @@
 {
     "name": "constanze-standard/cookies",
     "type": "library",
-    "description": "The PSR-15 middleware for cookies",
-    "keywords": ["cookie", "middleware", "cookies", "psr", "psr-15"],
+    "description": "Cookie support for PSR-7 response.",
+    "keywords": ["cookie", "cookies", "psr", "psr-7", "response"],
     "license": "Apache-2.0",
     "minimum-stability": "stable",
     "prefer-stable": true,
