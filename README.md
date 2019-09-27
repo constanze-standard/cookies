@@ -38,6 +38,9 @@ Cookie's arguments:
 
 Set cookies for PSR-7 response:
 ```php
-/** @var \Psr\Http\Message\ResponseInterface $response */
-$cookieCollection->makeResponse($response);
+/**
+ * @var \Psr\Http\Message\ResponseInterface $response
+ * @var \Psr\Http\Message\ResponseInterface $newResponse
+ */
+$newResponse = $cookieCollection->makeResponse($response);
 ```
