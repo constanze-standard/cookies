@@ -36,6 +36,12 @@ The cookie's arguments:
 - `bool $secure` Indicates that the cookie should only be transmitted over a secure HTTPS connection from the client.
 - `bool $httponly` When TRUE the cookie will be made accessible only through the HTTP protocol.
 
+You can set default value for `domain` and `secure` with construct of `CookieCollection`.
+```php
+$cookieCollection = new CookieCollection('localhost', true);
+```
+If you add a cookie with empty `domain` or `secure`, the collection will use the default value.
+
 Set cookies for PSR-7 response:
 ```php
 /**
