@@ -27,7 +27,7 @@ $cookieCollection = new CookieCollection();
 $cookie = $cookieCollection->add('name', 'value', 60);
 ```
 
-Cookie's arguments:
+The cookie's arguments:
 - `string $name` The name of the cookie.
 - `string $value` The value of the cookie.
 - `int $expireTime` The time of cookie expires relatively to current timestamp.
