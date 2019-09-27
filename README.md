@@ -18,7 +18,7 @@ $cookieCollection = new CookieCollection();
 $cookieCollection->addCookie($cookie);
 ```
 
-Or you can add cookie with `add`, it will return the new created `Cookie` instance:
+Or you can add cookie with method `add`, it will return the new created `Cookie` instance:
 ```php
 use ConstanzeStandard\Cookies\CookieCollection;
 
