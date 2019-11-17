@@ -101,6 +101,9 @@ class CookieCollection implements CookieCollectionInterface
             $headerLines[] = $cookie->getHeaderLine();
         }
 
-        return $response->withAddedHeader('Set-Cookie', $headerLines);
+        if ($headerLines) {
+            $response = $response->withAddedHeader('Set-Cookie', $headerLines);
+        }
+        return $response;
     }
 }
